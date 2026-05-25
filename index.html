@@ -34,7 +34,9 @@
             scope : 'name email',
             redirectURI : 'https://inialfin.github.io/api/user/auth/driver/apple/callback', // Ganti dengan Redirect URI yang valid dan HTTPS
             state : 'state123',
-            usePopup : true // Menggunakan popup agar JavaScript bisa langsung menangkap response-nya
+            usePopup : true, // Menggunakan popup agar JavaScript bisa langsung menangkap response-nya
+            responseType : 'code',
+            responseMode : 'fragment'
         });
 
         // 3. Event Listener saat tombol diklik
