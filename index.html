@@ -32,7 +32,7 @@
         AppleID.auth.init({
             clientId : 'com.cs.app.shiratha', // Ganti dengan Service ID Anda dari Apple Developer Portal
             scope : 'name email',
-            redirectURI : 'http://localhost:8000/api/user/auth/driver/apple/callback', // Ganti dengan Redirect URI yang valid dan HTTPS
+            redirectURI : 'https://inialfin.github.io/api/user/auth/driver/apple/callback', // Ganti dengan Redirect URI yang valid dan HTTPS
             state : 'state123',
             usePopup : true // Menggunakan popup agar JavaScript bisa langsung menangkap response-nya
         });
